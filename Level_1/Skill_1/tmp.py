@@ -1,13 +1,7 @@
-# 10. Given a dictionary of usernames and passwords, write a script that asks for a username
-    # and prints the stored password.
+# 10. Extract all vowels from a string.
+def extract_vowels(s):
+    vowels = "aeiouAEIOU"
+    return ''.join([char for char in s if char in vowels])
 
-users = {'youssef': 'y0xPass123', 'ahmed': 'ah/pass02'}
-
-def users_dictionary():
-  username = input("Enter your username: ")
-
-  print(f'{username},  your password is: {users[username]}')
-
-
-
-users_dictionary()
+print(extract_vowels("Hello World"))  # Output: eoO
+print(extract_vowels("Hello super H"))   # eoue
